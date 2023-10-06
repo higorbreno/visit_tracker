@@ -7,4 +7,12 @@ class User < ApplicationRecord
   def admin?
     role == 'admin'
   end
+
+  def attend?
+    role == 'attend'
+  end
+
+  def employee?
+    role == 'employee'
+  end
 end

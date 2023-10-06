@@ -1,6 +1,7 @@
 class SectorsController < ApplicationController
-  before_action :set_sector, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!, :set_sector, only: %i[ show edit update destroy ]
+  load_and_authorize_resource
+  
   # GET /sectors or /sectors.json
   def index
     @sectors = Sector.all
