@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_time: 2023-10-06 10:38:00
+  visitor: one
+  employee: one
+
+two:
+  date_time: 2023-10-06 10:38:00
+  visitor: two
+  employee: two

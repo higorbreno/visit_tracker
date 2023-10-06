@@ -1,0 +1,14 @@
+<h1>New sector</h1>
+
+<%= form_with model: @sector do |form| %>
+    <p>Name: <%= form.text_field :name %></p>
+    <p>Unit: <%= form.select :unit_id, Unit.pluck(:name, :id) %></p>
+
+    <%= form.submit %>
+<br>
+
+<div>
+  <%= link_to "Back to sectors", sectors_path %>
+</div>
+
+<% end %>

@@ -1,0 +1,17 @@
+<h1>New visitor</h1>
+
+<%= form_with model: @visitor do |form| %>
+    <p>Name: <%= form.text_field :name %></p>
+    <p>CPF: <%= form.text_field :cpf %></p>
+    <p>RG: <%= form.text_field :rg %></p>
+    <p>Telephone: <%= form.text_field :telephone %></p>
+    <p>Photo: <%= form.text_field :photo %></p>
+
+    <%= form.submit %>
+<br>
+
+<div>
+  <%= link_to "Back to visitors", visitors_path %>
+</div>
+
+<% end %>

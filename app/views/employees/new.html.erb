@@ -1,0 +1,14 @@
+<h1>New employee</h1>
+
+<%= form_with model: @employee do |form| %>
+  <p>Name: <%= form.text_field :name %></p>
+  <p>Sector: <%= form.select :sector_id, Sector.pluck(:name, :id) %></p>
+
+  <%= form.submit %>
+<br>
+
+<div>
+  <%= link_to "Back to employees", employees_path %>
+</div>
+
+<% end %>
